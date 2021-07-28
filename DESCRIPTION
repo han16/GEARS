@@ -1,0 +1,11 @@
+Package: GEARS
+Type: Package
+Title: Gaussian differEntiAl netwoRk analysiS
+Version: 0.1.0
+Author: person("Hongmei Zhang", "Shengtong Han", email = "shengtonghan@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: The package maintainer <shengtonghan@gmail.com>
+Description: 
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
