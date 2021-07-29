@@ -7,7 +7,9 @@
 
 <!-- badges: end -->
 
-The goal of GEARS is to …
+The goal of GEARS is to reconstruct Gaussian Bayesian network and
+compare between two networks (identical or differential) with graph
+ordering unknown.
 
 ## Installation
 
@@ -34,33 +36,26 @@ In case people have installation problem, try this
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(GEARS)
 ## basic example code
+head(exampleData4)
+#>            V1         V2         V3         V4         V5         V6
+#> 1  0.80426840  1.9006522  1.0777911 -0.1099156  6.7435888  1.0748047
+#> 2  0.12403565  0.5072030 -0.6071371  0.9988323  1.4933037  1.3914729
+#> 3 -0.09277538  1.6601093 -1.7514093  1.6036877  1.1269293  3.2696831
+#> 4  0.24335230 -1.1334361 -0.2062619  0.6096576  0.8399068 -0.3126217
+#> 5  0.02536413 -0.5756416 -1.3068243  0.1720098 -2.7572069  1.3700969
+#> 6 -0.89784935 -1.7635564 -1.8967425 -0.8790398 -9.5008889 -2.9371123
+#>          V7        V8         V9        V10
+#> 1  4.144335  3.354748  2.8457608  13.357390
+#> 2  1.487572  2.005783  6.7149070  18.386733
+#> 3  6.053086  7.161020 10.9266216  37.144373
+#> 4 -2.513313 -1.144628 -0.3666188  -5.634854
+#> 5 -1.492838 -3.789733  2.9199732   3.416417
+#> 6 -6.030453 -7.717611 -9.3254433 -29.471658
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+  - `exampleData4` is one simulated data set with number of node as the
+    number of the columns, 10.
+  - `exampleData1` is the regression coefficient in the network

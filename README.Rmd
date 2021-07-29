@@ -15,9 +15,11 @@ knitr::opts_chunk$set(
 # GEARS
 
 <!-- badges: start -->
+
+
 <!-- badges: end -->
 
-The goal of GEARS is to ...
+The goal of GEARS is to reconstruct Gaussian Bayesian network and compare between two networks (identical or differential) with graph ordering unknown.
 
 ## Installation
 
@@ -45,25 +47,13 @@ devtools::install_git("https://github.com/han16/GEARS")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(GEARS)
 ## basic example code
+head(exampleData4)
+
 ```
+* `exampleData4` is one simulated data set with number of node as the number of the columns, 10. 
+* `exampleData1` is the regression coefficient in the network
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
