@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of GEARS is to reconstruct Gaussian Bayesian network and compare between two networks (identical or differential) with graph ordering unknown.
+The goal of GEARS is to reconstruct Gaussian Bayesian network and compare two networks (identical or differential) with graph ordering unknown.
 
 ## Installation
 
@@ -51,9 +51,14 @@ devtools::install_git("https://github.com/han16/GEARS")
 ```{r example}
 library(GEARS)
 ## basic example code
+head(exampleData1)
 head(exampleData4)
 
 ```
-* `exampleData4` is one simulated data set with number of node as the number of the columns, 10. 
 * `exampleData1` is the regression coefficient in the network
+* `exampleData4` is one simulated data set with number of node as the number of the columns, 10. 
 
+
+## Reference 
+
+[Gaussian Bayesian network comparisons with graph ordering unknown](https://www.sciencedirect.com/science/article/abs/pii/S0167947320302474)

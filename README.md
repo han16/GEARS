@@ -8,8 +8,8 @@
 <!-- badges: end -->
 
 The goal of GEARS is to reconstruct Gaussian Bayesian network and
-compare between two networks (identical or differential) with graph
-ordering unknown.
+compare two networks (identical or differential) with graph ordering
+unknown.
 
 ## Installation
 
@@ -39,6 +39,28 @@ In case people have installation problem, try this
 ``` r
 library(GEARS)
 ## basic example code
+head(exampleData1)
+#>    V1  V2  V3  V4  V5 V6  V7 V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19
+#> 1 1.5 1.5 0.0 0.0 0.0  0 1.5  2  2 2.5 1.5   0 0.0   2   0 1.5 2.0 0.0   2
+#> 2 1.5 1.5 2.0 1.5 2.0  2 1.5  2  2 2.5 0.0   0 0.0   0   0 1.5 0.0 2.0   2
+#> 3 1.5 1.5 0.0 1.5 2.0  2 1.5  2  2 2.5 1.5   2 0.0   0   2 0.0 1.5 2.0   2
+#> 4 1.5 1.5 0.0 0.0 1.5  2 0.0  0  0 1.5 0.0   0 1.5   2   2 0.0 1.5 0.0   0
+#> 5 1.5 0.0 1.5 0.0 1.5  0 1.5  0  2 2.0 0.0   0 1.5   2   2 1.5 0.0 2.0   0
+#> 6 1.5 1.5 2.0 1.5 2.0  2 1.5  2  2 2.5 0.0   0 1.5   0   0 0.0 0.0 1.5   0
+#>   V20 V21 V22 V23 V24 V25 V26 V27 V28 V29 V30 V31 V32 V33 V34 V35 V36 V37
+#> 1   0 0.0 0.0 1.5   2   2 0.0   0   0 1.5 0.0 0.0 2.0   0 2.0 0.0   0   0
+#> 2   0 2.5 0.0 0.0   0   0 0.0   0   0 0.0 0.0 0.0 1.5   0 2.0 0.0   0   0
+#> 3   0 2.5 0.0 1.5   0   0 0.0   2   0 0.0 0.0 2.0 0.0   0 0.0 2.5   0   0
+#> 4   0 2.0 1.5 2.0   0   2 2.5   0   0 0.0 1.5 0.0 2.0   0 0.0 0.0   0   0
+#> 5   2 2.5 1.5 0.0   0   2 0.0   0   2 0.0 0.0 1.5 2.0   0 2.0 2.5   0   0
+#> 6   2 2.0 0.0 0.0   0   0 0.0   0   0 1.5 0.0 2.0 0.0   2 2.5 0.0   0   0
+#>   V38 V39 V40 V41 V42 V43 V44 V45
+#> 1   0 0.0 1.5   0 0.0   2   0 2.0
+#> 2   0 0.0 1.5   2 2.0   0   0 2.5
+#> 3   0 0.0 0.0   0 0.0   0   0 0.0
+#> 4   0 1.5 2.0   2 2.5   0   0 0.0
+#> 5   0 0.0 0.0   0 0.0   0   0 0.0
+#> 6   0 0.0 1.5   0 2.0   0   0 0.0
 head(exampleData4)
 #>            V1         V2         V3         V4         V5         V6
 #> 1  0.80426840  1.9006522  1.0777911 -0.1099156  6.7435888  1.0748047
@@ -56,6 +78,11 @@ head(exampleData4)
 #> 6 -6.030453 -7.717611 -9.3254433 -29.471658
 ```
 
+  - `exampleData1` is the regression coefficient in the network
   - `exampleData4` is one simulated data set with number of node as the
     number of the columns, 10.
-  - `exampleData1` is the regression coefficient in the network
+
+## Reference
+
+[Gaussian Bayesian network comparisons with graph ordering
+unknown](https://www.sciencedirect.com/science/article/abs/pii/S0167947320302474)
